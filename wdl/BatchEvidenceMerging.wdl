@@ -179,6 +179,7 @@ task SDtoBAF {
   input {
     Array[File] SD_files
     File sd_locs_vcf
+    File sd_locs_vcf_index = sd_locs_vcf + ".tbi"
     String batch
     Array[String] samples
     Boolean rename_samples
