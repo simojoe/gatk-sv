@@ -123,7 +123,7 @@ task MergeEvidence {
   command <<<
 
     set -euo pipefail
-    ulimit -n 100000
+    # ulimit -n 100000
 
     mv ~{write_lines(files)} evidence.list
     mv ~{write_lines(samples)} samples.list
@@ -212,7 +212,7 @@ task SDtoBAF {
   command <<<
 
     set -euo pipefail
-    ulimit -n 100000
+    # ulimit -n 100000
 
     mv ~{write_lines(SD_files)} inputs.list
     mv ~{write_lines(samples)} samples.list
